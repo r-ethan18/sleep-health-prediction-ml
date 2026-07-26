@@ -48,11 +48,11 @@ Running in Google Colab provides several benefits:
      - `StandardScaler` for numerical feature scaling.
      - `OneHotEncoder` (handling unknown categories) for categorical variables.
 
-2. **Class Imbalance Mitigation:**
+2. **Class Imbalance Mitigation Strategies:**
    - **SMOTE (Synthetic Minority Over-sampling Technique):** Applied via `imblearn` pipelines to balance minority classes.
    - **Cost-Sensitive Learning / Class Weighting:** Implemented customized multi-class weights in LightGBM and Random Forest to heavily penalize misclassification of severe/moderate disorder risks.
 
-3. **Machine Learning Algorithms:**
+3. **Machine Learning Algorithms Used:**
    - **K-Nearest Neighbors (KNN):** Distance-based baseline classifier.
    - **SMOTE + KNN:** KNN classifier trained on SMOTE-oversampled training data.
    - **Logistic Regression:** Linear multi-class baseline.
